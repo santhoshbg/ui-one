@@ -1,0 +1,67 @@
+    .fancybox-custom .fancybox-skin {
+        box-shadow: 0 0 50px #222;
+    }
+
+    .image-gallery-content-wrapper {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .top-recruiters-image-list-wrapper {
+        margin-bottom: 20px;
+    }
+
+    .top-recruiters-content-page-image a img {
+        width: 100%;
+    }
+
+    .top-recruiters-image-list-component-wrapper {
+        width: 200px !important;
+        vertical-align: top;
+        margin: 0 9px 0px 13px;
+        float: left;
+    }
+
+    .top-recruiters-image-list-component-wrapper:last-child {
+        margin-right: 0;
+    }
+
+    .top-recruiters-content-page-image {
+        margin: 0 0 13px;
+    }
+
+    .main-content-wrapper h1 {
+        font-size: 32px;
+        color: #373737;
+        padding: 0 0 30px;
+        margin: 0 0 30px;
+        border-bottom: 1px solid #f5f4f3;
+    }
+    /*Mobile and Small Device Styles*/
+
+    @media only screen and (min-width: 0) and (max-width: 767px) {
+        .pagingInfo,
+        .next,
+        .slick-dots {
+            font-size: 12px;
+        }
+        .upcoming-events-component-wrapper:first-child {
+            margin-left: 0;
+        }
+        .top-recruiters-image-list-component-wrapper {
+            width: 100% !important;
+        }
+    }
+    /*Tablet and Medium Device Styles*/
+
+    @media only screen and (min-width: 768px) and (max-width: 1199px) {
+        .top-recruiters-image-list-component-wrapper {
+            width: 96% !important;
+        }
+        .top-recruiters-image-list-component {
+            width: 50% !important;
+        }
+        .slick-track {
+            width: 98% !important;
+        }
+    }

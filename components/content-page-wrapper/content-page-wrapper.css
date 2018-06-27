@@ -1,0 +1,29 @@
+/*Content Page Generic Styles*/
+.main-content-wrapper {
+	background-color: #fff;
+	padding: 20px 30px 60px;
+	top: -50px;
+	margin: 0 0 80px;
+	position: relative;
+}
+.content-page-wrapper h1 {
+	font-size: 32px;
+	color: #373737;
+	padding: 0 0 30px;
+	margin: 0 0 30px;
+	border-bottom: 1px solid #f5f4f3;
+}
+
+/*Mobile, Tablet and Medium Style */
+@media only screen and (max-width: 1199px) {
+	.geu-content-page-main-wrapper {
+		background-color: #fff;
+	}
+	.main-content-wrapper {
+		top: 10px;
+		padding: 0 5px;
+	}
+	.content-page-wrapper h1 {
+		font-size: 22px;
+	}
+}

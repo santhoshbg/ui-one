@@ -1,0 +1,65 @@
+.tata-tech-award-component {
+    background-color: #373737;
+    padding: 35px 0;
+}
+
+.tata-tech-award-component h3 {
+    color: #ffffff;
+    font-family: Roboto-Bold;
+    font-size: 24px;
+    margin: 0 0 30px;
+}
+
+.tata-tech-award-component .headlines {
+    background: #2377c7;
+    padding: 9px 10px 6px 6px;
+    width: 70%;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.tata-tech-award-component p {
+    color: #fff;
+    text-align: left;
+}
+
+.award-image-wrapper {
+    background: orange;
+    width: 70px;
+    height: auto;
+}
+
+.tata-tech-award-section {
+    width: 33.3%;
+    float: left;
+    padding: 0 10px 20px;
+}
+
+.tata-tech-award-component-wrapper {
+    text-align: center;
+}
+
+
+/*Mobile Styles*/
+
+@media only screen and (min-width: 0) and (max-width: 767px) {
+    .tata-tech-award-section {
+        width: 100%;
+    }
+    .tata-tech-award-component .headlines {
+        width: 73%;
+    }
+}
+
+
+/*Tablet and Medium Devices Styles*/
+
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+    .tata-tech-award-section {
+        width: 100%;
+    }
+    .tata-tech-award-component .headlines {
+        padding: 28px;
+        width: 88%;
+    }
+}

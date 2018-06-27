@@ -1,0 +1,106 @@
+.success-stories-content h3 {
+    font-family: Roboto-regular;
+    font-size: 14px;
+    margin-top: 8px;
+    margin-left: 10px;
+}
+
+.success-stories-content p {
+    font-size: 12px;
+    font-family: Roboto-light;
+    margin: 10px 10px 35px;
+}
+
+.success-stories-content
+{
+    width:100%;
+    padding-left: 190px;
+    min-height: 190px;
+}
+.success-stories-content a
+{
+    text-decoration: underline;
+}
+.success-stories-img
+{
+    position: absolute;
+}
+.success-stories-wrap  .success-stories-img img
+{
+    padding-top: 0;
+}
+.success-stories-wrap .success-stories-content p
+{
+    margin-bottom: 0;
+}
+.success-stories-wrap .more-stories
+{
+    color:#fff;
+    background: #dc2e27;
+    padding: 5px 10px;
+    display: block;
+    float: right;
+    clear: both;
+    text-decoration: none;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.success-stories-wrap .owl-theme .owl-nav {
+	position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin-top: -17px;
+}
+.success-stories-wrap .owl-theme .owl-nav .owl-prev {
+	position: absolute;
+	left: -40px;
+}
+.success-stories-wrap .owl-theme .owl-nav .owl-next {
+ 	position: absolute;
+ 	right: -40px;
+}
+.success-stories-wrap .owl-theme .owl-nav [class*='owl-'] {
+	background: none;
+}
+.success-stories-wrap .owl-theme .owl-nav [class*='owl-']:hover {
+    background: #dc2e27;
+}
+.success-stories-wrap .owl-theme .owl-nav [class*='owl-']:hover i {
+	color: #fff;
+}
+.success-stories-wrap .owl-theme .owl-nav i {
+    color: #dc2e27;
+    background: none;
+    font-size: 22px;
+}
+
+/*Mobile Styles*/
+@media only screen and (min-width: 0) and (max-width: 767px) {
+    .success-stories-content
+    {
+        width:100%;
+        padding-left: 140px;
+        min-height: 140px;
+    }
+    .success-stories-wrap .success-stories .success-stories-img img
+    {
+        max-width: 130px;
+        display: inline;
+    }
+    .success-stories-wrap
+    {
+        padding: 0 40px;
+    }
+
+    .success-stories-content
+    {
+        padding-left: 0px;
+    }
+    .success-stories-img
+    {
+        position: static;
+        text-align: center;
+    }
+}

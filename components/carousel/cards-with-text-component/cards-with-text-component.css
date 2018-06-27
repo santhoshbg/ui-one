@@ -1,0 +1,94 @@
+   section.cards-with-text-section {
+      margin-bottom: 30px;
+   }
+   .cards-with-text-content-wrap {
+       text-align: center;
+       margin-bottom: 5px;
+   }
+
+   .cards-with-text-textcontent {
+       background: #373737;
+       display: inline-block;
+       word-wrap: break-word;
+       width: 210px;
+       color: #fff;
+       height: 160px;
+       vertical-align: middle;
+       line-height: 20px;
+       padding: 70px 30px;
+   }
+
+   .slick-dotted.slick-slider {
+       margin-bottom: 30px;
+   }
+
+   .slick-dots {
+       text-align: right !important;
+       width: 300px !important;
+       right: 40px !important;
+   }
+
+   .slider .slick-dots li {
+       width: 25px;
+       margin: 0;
+   }
+
+   .slider .slick-dots .slick-active a {
+       background: #dc2e27;
+       color: #fff;
+       text-align: center;
+       padding: 3px;
+   }
+
+   .slider-arrows a {
+       margin-top: -25px;
+       float: right;
+       position: relative;
+       z-index: 1;
+       cursor: pointer;
+   }
+
+   .slider-arrows a.prev {
+       margin-right: 100px;
+   }
+
+   .main-content-wrapper h1 {
+       font-size: 32px;
+       color: #373737;
+       padding: 0 0 30px;
+       margin: 0 0 30px;
+       border-bottom: 1px solid #f5f4f3;
+   }
+
+   .pagingInfo {
+       margin-top: -25px;
+       float: left;
+       position: relative;
+       z-index: 1;
+       cursor: pointer;
+   }
+   /*Mobile and Small Device Styles*/
+
+   @media only screen and (min-width: 0) and (max-width: 767px) {
+       .pagingInfo,
+       .next,
+       .slick-dots {
+           font-size: 12px;
+       }
+       .upcoming-events-component-wrapper:first-child {
+           margin-left: 0;
+       }
+       .cards-with-text-textcontent {
+           width: 97%;
+       }
+   }
+   /*Tablet and Medium Device Styles*/
+
+   @media only screen and (min-width: 768px) and (max-width: 1199px) {
+       .cards-with-text-textcontent {
+           width: 97%;
+       }
+       .slick-track {
+           width: 98% !important;
+       }
+   }

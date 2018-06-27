@@ -1,0 +1,94 @@
+.tata-tech-course-component-wrapper {
+    width: 259px;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 11px 40px 0;
+}
+
+.tata-tech-course-component-wrapper:last-child {
+    margin-right: 0;
+}
+
+.tata-tech-content-page-image img {
+    width: 100%;
+}
+
+.tata-tech-content-page-descriptions {
+    padding: 20px;
+}
+
+.tata-tech-content-page-descriptions h3 {
+    margin: 0 0 10px;
+}
+
+.tata-tech-content-page-descriptions {
+    background: #373737;
+    color: #fff;
+    cursor: pointer;
+}
+
+/*Mobile Styles*/
+
+@media only screen and (min-width: 0) and (max-width: 767px) {
+    .tata-tech-course-component-wrapper {
+        width: 100%;
+    }
+}
+
+
+/*Tablet and Medium Device Styles*/
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .tata-tech-course-component-wrapper {
+        width: 30.33%;
+        margin: 0 26px 40px 0;
+    }
+    .tata-tech-course-component-wrapper:nth-child(3n) {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .tata-tech-course-component-wrapper:last-child {
+        margin-right: 0;
+    }
+}
+
+
+/*Tablet and Medium Device Styles*/
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .tata-tech-course-component-wrapper {
+        width: 49%;
+        margin: 0 7px 40px 0;
+    }
+    .tata-tech-course-component-wrapper:nth-child(3n) {
+        margin-left: 0;
+        margin-right: 7px;
+    }
+    .tata-tech-course-component-wrapper:last-child {
+        margin-right: 0;
+    }
+}
+
+@media only screen and (max-width: 767px) and (min-width: 0) {
+    .tata-tech-course-component-wrapper {
+        width: 46%;
+    }
+    .tata-tech-content-page-descriptions {
+        padding: 10px;
+        min-height: 140px;
+    }
+    .tata-tech-content-page-descriptions p {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+    .tata-tech-course-component-wrapper:nth-child(3n) {
+        margin-left: 0px;
+        margin-right: 5px;
+    }
+    .tata-tech-course-component-wrapper {
+        width: 49%;
+        margin: 0 5px 40px 0;
+    }
+}

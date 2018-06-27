@@ -1,0 +1,153 @@
+.celebration-component {
+    background: #373737;
+    color: #ffffff;
+    padding: 40px 0;
+}
+
+.celebration-component .celebration-section-wrapper {
+    width: 50%;
+    float: left;
+    padding-right: 4%;
+}
+
+.celebration-component .celebration-section-wrapper h3 {
+    color: #ffffff;
+    font-family: Roboto-Bold;
+    font-size: 24px;
+    margin: 0 0 30px;
+}
+
+.celebration-component .celebration-section-wrapper h3 .celebration-year-text {
+    color: #dc2e27;
+}
+
+.celebration-component .celebration-section-wrapper p {
+    font-size: 12px;
+    font-family: Roboto-regular;
+    margin: 0 0 40px;
+}
+
+.celebration-component .celebration-section-wrapper .more-information a {
+    font-size: 14px;
+    color: #dc2e27;
+    text-decoration: none;
+}
+
+.celebration-component .celebration-section-news,
+.celebration-component .celebration-section-events {
+    width: 25%;
+    float: left;
+}
+
+.celebration-section-news h3,
+.celebration-section-events h3 {
+    color: #ffffff;
+    font-family: Roboto-Bold;
+    font-size: 24px;
+    margin: 0 0 20px;
+}
+
+.celebration-component .each-records {
+    margin: 0 0 15px;
+}
+
+.celebration-component .each-records .headlines {
+    background: #fff;
+    padding: 6px 10px 6px 6px;
+}
+
+.celebration-component .each-records .headlines.active, 
+.celebration-component .each-records .headlines:hover {
+    background: #dc2e27;
+    color: #fff;
+    cursor: pointer;
+}
+
+.celebration-component .each-records .headlines.active p,
+.celebration-component .each-records .headlines:hover p {
+    color: #fff;
+}
+
+.celebration-component .each-records .headlines p{
+    color: #000;
+    font-size: 12px;
+}
+
+.celebration-component .each-records .headlines p.bold {
+    font-family: 'Roboto-Bold';
+    padding: 0 0 5px;
+    margin: 0;
+}
+
+.celebration-component .view-more {
+    font-size: 12px;
+    line-height: 30px;
+    color: #373737;
+    background: #fff;
+    text-align: center;
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    float: right;
+    margin-right: 18%;
+}
+.celebration-component .view-more:hover {
+    background-color: #dc2e27;
+    color: #000;
+}
+
+/*Mobile Styles*/
+@media only screen and (min-width: 0) and (max-width: 767px) {
+    .celebration-component {
+        padding: 20px 0;
+    }
+    .celebration-component .celebration-section-wrapper, 
+    .celebration-component .celebration-section-news,
+    .celebration-component .celebration-section-events {
+        width: 100%;
+    }
+    .celebration-component .celebration-section-wrapper {
+        margin: 0 0 25px;
+    }
+    .celebration-component .celebration-section-wrapper h3,
+    .celebration-component .celebration-section-news h3,
+    .celebration-component .celebration-section-events h3 {
+        font-size: 18px;
+        margin: 0 0 15px;
+    }
+    .celebration-component .celebration-section-wrapper p {
+        margin: 0 0 15px;
+    }
+    .celebration-component .headlines {
+        width: 80%;
+    }
+    .celebration-component .view-more {
+        margin-right: 20px;
+    }
+}
+
+/*Tablet and Medium Device Styles*/
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+    .celebration-component-wrapper {
+        padding: 30px;
+    }
+    .celebration-component .each-records {
+        padding: 0 20px;
+    }
+    .celebration-component .celebration-section-wrapper {
+        width: 100%;
+        padding-right: 0;
+        margin-bottom: 50px;
+    }
+    .celebration-component .celebration-section-news, 
+    .celebration-component .celebration-section-events {
+        width: 50%;
+    }
+    .celebration-component .headlines {
+        width: 80%;
+    }
+    .celebration-component .view-more {
+        margin-right: 7%;
+    }
+}

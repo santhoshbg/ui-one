@@ -1,0 +1,869 @@
+/*Login Page Styles*/
+.form-tabs ul {
+	border: 1px solid #ccc;
+}
+.form-tabs {
+	margin: 0 0 75px;
+}
+.form-tabs ul li {
+	border-right: 1px solid #ccc;
+	width: 33.33%;
+	height: 50px;
+	line-height: 50px;
+	float: left;
+	text-align: center;
+	list-style: none;
+	position: relative;
+}
+.form-tabs ul li:last-child {
+	border: none;
+}
+.form-tabs ul li a {
+	color: #373737;
+	display: block;
+}
+.form-tabs ul li.changebg:before {
+	content: '✓';
+	font-size: 12px;
+	line-height: 20px;
+	position: absolute;
+    background: green;
+    height: 18px;
+    width: 18px;
+    border-radius: 18px;
+    color: #fff;
+    top: 16px;
+    left: 39%;
+}
+.form-tabs ul li:nth-child(2).changebg:before {
+	left: 32%;
+}
+.form-tabs ul li:last-child.changebg:before {
+	left: 24%;
+}
+/*Login Styles*/
+.form-two-column-wrapper {
+	padding: 0 50px;
+}
+.form-two-column-wrapper .login-component-wrapper {
+	background-color: #e5e5e5;
+	display: inline-block;
+	vertical-align: top;
+	width: 49%;
+	min-height: 450px;
+}
+.form-two-column-wrapper .login-component-wrapper.changebg,
+.form-two-column-wrapper .partially-filled-form.changebg {
+	background-color: #373737;
+}
+.form-two-column-wrapper .login-component-wrapper.changebg .login-form label,
+.form-two-column-wrapper .partially-filled-form.changebg label {
+	color: #fff;
+}
+.form-two-column-wrapper .two-column-heading {
+	text-align: center;
+}
+.form-two-column-wrapper .two-column-heading h4 {
+	color: #fff;
+	background-color: #dc2e27;
+	height: 50px;
+	line-height: 50px;
+}
+.form-two-column-wrapper .login-form form {
+	padding: 0 50px;
+}
+.form-two-column-wrapper .login-form label {
+	color: #373737;
+	width: 30%;
+	font: 12px/15px 'Roboto-Regular';
+	display: inline-block;
+	vertical-align: middle;
+	padding-right: 10px;
+}
+.form-two-column-wrapper .login-form input,
+.form-two-column-wrapper .login-form select {
+	width: 68%;
+	height: 35px;
+}
+.form-two-column-wrapper .login-form .otp-wrapper {
+	padding-left: 115px;
+}
+.form-two-column-wrapper .login-form .otp {
+	display: inline-block;
+	vertical-align: top;
+}
+.form-two-column-wrapper .login-form .enterOtp,
+.form-two-column-wrapper .login-form .sendOtp {
+	visibility: hidden;
+}
+.form-two-column-wrapper .login-form .enterOtp,
+.form-two-column-wrapper .login-form .sendOtp {
+	width: 115px;
+}
+.form-two-column-wrapper .login-form .sendOtp {
+	background: transparent;
+	border: 1px solid #fff;
+	color: #fff;
+	margin-left: 18px;
+}
+.form-two-column-wrapper .login-form .submit {
+	float: right;
+	padding-right: 13px;
+}
+.form-two-column-wrapper .login-form input.submit-button {
+	display: inline-block;
+	vertical-align: top;
+	width: 150px;
+	height: 40px;
+	line-height: 40px;
+	color: #fff;
+	background-color: #dc2e27;
+	border: 1px solid #9a8783;
+}
+.form-two-column-wrapper .login-form #hideMsg {
+	display: none;
+	color: #fff;
+}
+/*Error Message Styles*/
+.form-error-message,
+.partially-filled-form-error-message,
+.basic-details-form-error-message,
+.email-error-message,
+.invalid-error-message,
+.upload-error-message,
+.one-field-mandate {
+	color: #dc2e27;
+	text-align: center;
+	font: 12px/15px 'Roboto-Regular';
+	margin: 15px 0 20px;
+}
+.basic-details-mobile-error-message {
+	color: #dc2e27;
+}
+input:required,
+select:required,
+textarea:required {
+    outline: 2px solid #dc2e27;
+}
+label.required::after, .required:after,
+.essay-question:after {
+	content: '*';
+	margin-left: 5px;
+	color: #dc2e27;
+}
+
+.form-two-column-wrapper .login-form input:disabled {
+	background-color: #e5e5e5;
+}
+.form-two-column-wrapper .login-form .submit-button[disabled] {
+	background-color: #ccc;
+}
+/*Partial Form Styles*/
+.partially-filled-form {
+	background-color: #e5e5e5;
+	display: inline-block;
+	vertical-align: top;
+	width: 49%;
+	min-height: 450px;
+	text-align: center;
+	margin: 0 0 0 15px;
+}
+.partially-filled-form .two-column-heading h4 {
+	color: #fff;
+	background-color: #dc2e27;
+	height: 50px;
+	line-height: 50px;
+}
+.partially-filled-form .partial-form {
+	padding-top: 80px;
+}
+.partially-filled-form .partial-form label {
+	color: #373737;
+	width: 25%;
+	font: 14px/15px 'Roboto-Regular';
+	display: inline-block;
+	vertical-align: middle;
+	text-align: right;
+	padding-right: 10px;
+}
+.partially-filled-form .partial-form input,
+.partially-filled-form .partial-form select {
+	width: 250px;
+	height: 35px;
+}
+.partially-filled-form .partial-form .form-group {
+	margin: 0 0 30px;
+}
+.partially-filled-form .partial-form input.submit-button {
+	display: inline-block;
+	vertical-align: top;
+	width: 120px;
+	height: 40px;
+	float: right;
+	margin-right: 55px;
+	line-height: 40px;
+	color: #fff;
+	background-color: #dc2e27;
+	border: 1px solid #9a8783;
+}
+
+
+/*Personal Details*/
+/*#basic-details-form {
+	display: none;
+}*/
+#basic-details-form #area-of-interest {
+	font-size: 16px;
+	background: #dc2e27;
+	color: #fff;
+	outline: none;
+	border: none;
+	-webkit-appearance: none;
+	position: relative;
+}
+#basic-details-form .form-group.selection {
+	position: relative;
+}
+/*#basic-details-form .form-group.area-of-interest label:after {
+	content: "\f0d7";
+    font-family: FontAwesome;
+    color: #fff;
+    position: absolute;
+    right: 35px;
+    top: 27px;
+    z-index: 1;
+    width: 10%;
+    height: 100%;
+    pointer-events: none;
+    font-size: 26px;
+}*/
+.top-section-wrapper .personal-details {
+	background-color: #373737;
+	height: 70px;
+	width: 75%;
+	float: left;
+}
+.top-section-wrapper .personal-details .each-section {
+	width: 25%;
+	padding: 15px 15px 0 15px;
+	float: left;
+}
+.top-section-wrapper .personal-details .each-section .label {
+	font: 14px/15px "Roboto-Regular";
+	color: #fff;
+	padding: 0 0 8px;
+	display: inline-block;
+}
+.top-section-wrapper .personal-details .each-section .content {
+	font: 14px/15px "Roboto-Regular";
+	color: #989898;
+}
+.basic-details-wrapper .selection {
+	background-color: #dc2e27;
+	height: 70px;
+	padding: 10px 0 0 30px;
+	float: left;
+	width: 25%;
+}
+.basic-details-wrapper .selection label {
+	display: block;
+	color: #fff;
+}
+.basic-details-wrapper .selection select {
+	width: 210px;
+}
+
+/*Program-wrapper*/
+.program-wrapper {
+	margin: 0 0 50px;
+}
+.tab-heading {
+	background-color: #373737;
+	padding-left: 10px;
+	width: 250px;
+	height: 40px;
+	color: #fff;
+	line-height: 40px;
+	margin: 0 0 25px;
+}
+.program-wrapper .form-group.selection,
+.program-wrapper .form-group.selection-ug,
+.program-wrapper .form-group.selection-pg {
+	display: inline-block;
+	vertical-align: top;
+	margin: 0 0 30px;
+}
+/*.program-wrapper select:after {
+	content: "/f0d7";
+	font-family: "Font Awesome";
+}*/
+.program-wrapper label {
+	font: 12px/15px "Roboto-Regular";
+	display: block;
+}
+.program-wrapper select {
+	width: 250px;
+	height: 40px;
+	margin-right: 35px;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	cursor: pointer;
+}
+/*.program-wrapper .form-group.selection,
+.program-wrapper .form-group.selection-ug,
+.program-wrapper .form-group.selection-pg {
+	position: relative;
+}
+.program-wrapper .form-group.selection select:after,
+.program-wrapper .form-group.selection-ug select:after,
+.program-wrapper .form-group.selection-pg select:after {
+    content: "\f0d7";
+    font-family: FontAwesome;
+    color: #6b7376;
+    position: absolute;
+    right: 35px;
+    top: 27px;
+    z-index: 1;
+    width: 10%;
+    height: 100%;
+    pointer-events: none;
+    font-size: 26px;
+}*/
+.program-wrapper select:required {
+	outline: 1px solid #f00;
+}
+.course-details-wrapper {
+	border: 1px solid #ccc;
+	padding: 15px;
+}
+.course-details-wrapper .heading {
+	padding: 0 0 10px 25px;
+}
+.course-details-wrapper .course-details {
+	border: 1px solid #ccc;
+	padding: 0 10px;
+	line-height: 50px;
+}
+.course-details-wrapper .course-title {
+	border-right: 1px solid #ccc;
+	padding-left: 15px;
+	float: left;
+	width: 20%;
+}
+.course-details-wrapper .course-description {
+	padding-left: 15px;
+	float: left;
+	width: 80%;
+}
+
+/*Education System*/
+.education-wrapper .education-heading {
+	font-size: 16px;
+	padding: 0 0 20px;
+}
+.education-wrapper label {
+	font: 12px/15px "Roboto-Regular";
+	display: block;
+	margin: 0 0 10px;
+}
+
+.education-wrapper .form-group {
+	display: inline-block;
+	vertical-align: top;
+	margin: 0 17px 25px 0;
+}
+.education-wrapper input,
+.education-wrapper select {
+	font-size: 12px;
+	width: 250px;
+	height: 40px;
+}
+.education-wrapper select {
+	appearance: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+}
+/*.education-wrapper .form-group.selection {
+	position: relative;
+}
+.education-wrapper .form-group.selection label:after {
+    content: "\f0d7";
+    font-family: FontAwesome;
+    color: #6b7376;
+    position: absolute;
+    right: 0;
+    top: 35px;
+    z-index: 1;
+    width: 10%;
+    height: 100%;
+    pointer-events: none;
+    font-size: 26px;
+}*/
+.education-wrapper .sslc-wrapper,
+.education-wrapper .hsc-wrapper {
+	margin: 0 0 35px;
+}
+.education-wrapper .hsc-wrapper .bottom-section {
+	margin: 25px 0 0;
+}
+.education-wrapper .hsc-wrapper .bottom-section .form-group {
+	width: 40%;
+}
+.education-wrapper .hsc-wrapper .bottom-section .form-group .heading,
+.education-wrapper .graduation-wrapper .bottom-section .form-group .heading {
+	margin: 0 0 10px;
+}
+.education-wrapper .hsc-wrapper .bottom-section .form-group.select-option label,
+.education-wrapper .graduation-wrapper .bottom-section .form-group.select-option label {
+	padding: 0;
+	margin: 0 0 10px;
+	display: inline-block;
+}
+.education-wrapper .hsc-wrapper .bottom-section .form-group input[type="radio"],
+ .education-wrapper .graduation-wrapper .bottom-section .form-group input[type="radio"]{
+	width: 20px;
+	height: auto;
+	margin: 0;
+	vertical-align: middle;
+}
+.education-wrapper .graduation-wrapper {
+	border-bottom: 1px solid #000;
+	margin: 0 0 30px;
+	padding: 0 0 30px;
+}
+
+/*Personal Details*/
+.personal-details-wrapper {
+	border-bottom: 1px solid #000;
+	margin: 0 0 30px;
+	padding: 0 0 30px;
+}
+.personal-details {
+	margin: 0 0 30px;
+	float: left;
+}
+.personal-details .form-group,
+.personal-details .form-group  input {
+	width: 250px;
+	height: 40px;
+	float: left;
+	margin-right: 17px;
+}
+.personal-details-wrapper .form-group input[type="radio"] {
+	width: 20px;
+	height: auto;
+	margin: 0;
+	vertical-align: middle;
+}
+.personal-details .heading {
+	margin: 0 0 15px;
+}
+.personal-details label {
+	font: 12px "Roboto-Regular";
+	padding-right: 10px;
+}
+.communication-address, .permanent-address {
+	float: left;
+	width: 100%;
+}
+.communication-address textarea, 
+.permanent-address textarea,
+.suffer-section textarea {
+	width: 100%;
+	resize: vertical;
+	height: 80px;
+	margin: 0 0 30px;
+}
+.address-heading {
+	text-transform: uppercase;
+}
+.permanent-address .address-heading input {
+	margin: 0 5px 0 15px;
+	vertical-align: bottom;
+}
+.permanent-address .address-heading label {
+	font: 12px "Roboto-Bold";
+}
+.personal-details-wrapper .suffer-section label {
+	font: 12px "Roboto-Regular";
+	padding-right: 10px;
+}
+.personal-details-wrapper .suffer-section .heading {
+	font-size: 12px;
+	display: inline-block;
+	padding-right: 15px;
+}
+.personal-details-wrapper #suffering {
+	display: none;
+}
+.personal-details-wrapper .permanent-address[readonly] {
+	background-color: rgb(235, 235, 228);
+}
+
+/*Family Details*/
+.family-details-wrapper .heading {
+	font-size: 16px;
+	margin: 0 0 10px;
+}
+.family-details-wrapper .father-details,
+.family-details-wrapper .mother-details {
+	display: inline-block;
+	vertical-align: top;
+	margin: 0 0 30px;
+}
+.family-details-wrapper .form-group label {
+	font: 12px/14px "Roboto-Regular";
+}
+.family-details-wrapper .form-group,
+.family-details-wrapper .form-group  input {
+	width: 250px;
+	height: 40px;
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 17px;
+}
+.family-details-wrapper .relation-section {
+	display: block;
+	width: 100%;
+	margin: 0 0 50px;
+}
+.family-details-wrapper .relation-section .heading {
+	font-size: 12px;
+	padding-right: 20px;
+	float: left;
+}
+.family-details-wrapper .relation-section input[type="radio"] {
+	width: 15px;
+	height: 15px;
+	vertical-align: middle;
+	margin: 0 5px 0 0;
+}
+.family-details-wrapper .relation-section label {
+	font: 12px "Roboto-Regular";
+	padding-right: 10px;
+}
+#save {
+	float: right;
+	width: 250px;
+	height: 40px;
+	color: #fff;
+	background-color: #dc2e27;
+	text-align: center;
+}
+
+/*Upload Documents Styles*/
+.upload-section {
+	padding: 0 100px;
+}
+.upload-section-wrapper .upload-option,
+.upload-section-wrapper .upload-sslc-option,
+.upload-section-wrapper .upload-hsc-option,
+.upload-section-wrapper .upload-ug-option {
+	width: 25%;
+	height: 160px;
+	float: left;
+	padding: 65px 15px 0 50px;
+	border: 1px solid #373737;
+	border-spacing: 0;
+}
+.upload-section-wrapper .uploadSslcMarksheet,
+.upload-section-wrapper .uploadHscMarksheet,
+.upload-section-wrapper .uploadUgMarksheet {
+	width: 25%;
+	height: 160px;
+	float: left;
+	padding: 65px 15px 0;
+	border: 1px solid #373737;
+}
+.custom-file-upload {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer; 
+}
+.upload-option,
+.upload-sslc-option,
+.upload-hsc-option,
+.upload-ug-option {
+	position: relative;
+}
+.upload-option span:before,
+.upload-sslc-option span:before,
+.upload-hsc-option span:before,
+.upload-ug-option span:before {
+	content: 'x';
+    color: #dc2e27;
+    height: 15px;
+    width: 15px;
+    border-radius: 15px;
+    border: 1px solid #dc2e27;
+    position: absolute;
+    top: 6px;
+    text-align: center;
+    right: 2px;
+    font-size: 16px;
+    line-height: 12px;
+    cursor: pointer;
+}
+.upload-section-wrapper .upload-option.changebg,
+.upload-section-wrapper .upload-sslc-option.changebg,
+.upload-section-wrapper .upload-hsc-option.changebg ,
+.upload-section-wrapper .upload-ug-option.changebg {
+	background-color: #373737;
+	color: #fff;
+}
+.upload-section-wrapper .upload-photo,
+.upload-section-wrapper .upload-sslc-marksheet,
+.upload-section-wrapper .upload-hsc-marksheet,
+.upload-section-wrapper .upload-ug-marksheet {
+	float: left;
+	width: 70%;
+	min-height: 160px;
+	margin: 0 0 30px 20px;
+	border: 1px solid #373737;
+}
+.upload-section-wrapper .upload-photo .upload-photo-content,
+.upload-section-wrapper .upload-sslc-marksheet .upload-sslc-marksheet-content,
+.upload-section-wrapper .upload-hsc-marksheet .upload-hsc-marksheet-content,
+.upload-section-wrapper .upload-ug-marksheet .upload-ug-marksheet-content  {
+	background-color: #fff;
+	color: #373737;
+	padding: 50px 45px 30px;
+}
+.upload-section-wrapper .upload-photo .upload-photo-content.changebg,
+.upload-section-wrapper .upload-sslc-marksheet .upload-sslc-marksheet-content.changebg,
+.upload-section-wrapper .upload-hsc-marksheet .upload-hsc-marksheet-content.changebg,
+.upload-section-wrapper .upload-ug-marksheet .upload-ug-marksheet-content.changebg {
+	background-color: #dc2e27;
+	color: #fff;
+}
+.upload-section-wrapper h4 {
+	font-size: 18px;
+	margin: 0 0 15px;
+}
+.upload-section-wrapper p {
+	font-size: 16px;
+}
+.upload-section-wrapper .uploadSubmit {
+	background-color: #dc2e27;
+	color: #fff;
+	width: 130px;
+	height: 40px;
+	margin: 30px auto 0;
+	display: block;
+	line-height: 40px;
+}
+.video-section {
+	background-color: #e5e5e5;
+	padding: 25px;
+	margin: 0 0 20px;
+	float: left;
+}
+.video-section-content {
+	font-size: 18px;
+}
+.video-section .video-input input {
+	width: 100%;
+}
+.video-checkbox {
+	margin: 15px 0 0;
+}
+.video-checkbox label {
+	font: 16px 'Roboto-Regular';
+}
+.video-checkbox input {
+	margin-right: 10px;
+	vertical-align: top;
+}
+.essay-question-first,
+.essay-question-second {
+	background-color: #e5e5e5;
+	padding: 10px 25px;
+	float: left;
+	width: 100%;
+	margin: 0 0 20px;
+}
+.essay-question-first .essay-question,
+.essay-question-second .essay-question {
+	margin: 0 0 10px;
+}
+.essay-question-first {
+	margin: 0 0 20px;
+}
+.essay-question-first textarea,
+.essay-question-second textarea {
+	width: 100%;
+	height: 100px;
+	resize: vertical;
+}
+.essay-answer textarea::placeholder {
+    text-align: right;
+    padding-top: 75px;
+}
+
+/*Mobile and small devvices styles*/
+@media only screen and (min-width: 0) and (max-width: 767px) {
+	.form-tabs {
+		display: none;
+	}
+
+	/*Step-1 Registration*/
+	.form-two-column-wrapper {
+	    padding: 0;
+	}
+	.form-two-column-wrapper .login-component-wrapper {
+		width: 100%;
+		margin: 0 0 30px;
+	}
+	.form-two-column-wrapper .login-form form,
+	.partially-filled-form .partial-form .form-group {
+	    padding: 0 10px;
+	}
+	.form-two-column-wrapper .login-form label {
+	    padding-right: 20px;
+	    line-height: 30px;
+	    float: left;
+	    text-align: right;
+	    width: 40%;
+	}
+	.form-two-column-wrapper .login-form input, 
+	.form-two-column-wrapper .login-form select {
+	    width: 60%;
+	}
+	.partially-filled-form .partial-form {
+		padding-top: 50px;
+	}
+	.partially-filled-form .two-column-heading h4 {
+		font-size: 14px;
+	}
+	.partially-filled-form {
+		width: 100%;
+		margin: 0;
+	}
+	.partially-filled-form .partial-form label {
+	    width: 30%;
+	}
+	.partially-filled-form .partial-form input, 
+	.partially-filled-form .partial-form select {
+		width: 65%;
+	}
+	.partially-filled-form .partial-form input.submit-button {
+		margin-right: 3px;
+	}
+
+	/*Step-2*/
+	.basic-details-wrapper .top-section-wrapper {
+		background-color: #373737;
+		clear: both;
+		margin: 0 0 30px;
+	}
+	.top-section-wrapper .personal-details {
+		height: auto;
+	}
+	.course-details-wrapper .course-title {
+		width: 35%;
+	}
+	.course-details-wrapper .course-description {
+		width: 65%;
+	}
+	.top-section-wrapper .personal-details .each-section,
+	.basic-details-wrapper .selection,
+	.tab-heading, #basic-details-form .form-group.selection,
+	.program-wrapper .form-group.selection-ug,
+	.education-wrapper input, .education-wrapper select,
+	.education-wrapper .form-group, .education-wrapper .hsc-wrapper .bottom-section .form-group,
+	.family-details-wrapper .form-group, .family-details-wrapper .form-group input, 
+	.personal-details .form-group, .personal-details .form-group input, #save {
+		width: 100%;
+	}
+	.course-details-wrapper .course-details {
+		line-height: 30px;
+	}
+	.personal-details-wrapper .personal-details .form-group.selection,
+	.personal-details .form-group, .personal-details .form-group input,
+	.family-details-wrapper .form-group {
+		margin: 0 0 15px;
+		height: auto;
+	}
+	.permanent-address .address-heading input {
+		margin: 0 5px 0 0;
+	}
+	.family-details-wrapper .relation-section label {
+		padding-right: 3px;
+	}
+
+	/*Step-3 Upload Section*/
+	.upload-section {
+	    padding: 0;
+	}
+	.upload-section-wrapper .upload-option, .upload-section-wrapper .upload-sslc-option, 
+	.upload-section-wrapper .upload-hsc-option, .upload-section-wrapper .upload-ug-option,
+	.upload-section-wrapper .upload-photo, .upload-section-wrapper .upload-sslc-marksheet, 
+	.upload-section-wrapper .upload-hsc-marksheet, .upload-section-wrapper .upload-ug-marksheet {
+		width: 100%;
+		height: auto;
+		min-height: 160px;
+	}
+	.upload-section-wrapper .upload-photo, .upload-section-wrapper .upload-sslc-marksheet, 
+	.upload-section-wrapper .upload-hsc-marksheet, .upload-section-wrapper .upload-ug-marksheet {
+		margin: 0 0 30px 0;
+	}
+	.upload-section-wrapper .upload-photo .upload-photo-content, 
+	.upload-section-wrapper .upload-sslc-marksheet .upload-sslc-marksheet-content, 
+	.upload-section-wrapper .upload-hsc-marksheet .upload-hsc-marksheet-content, 
+	.upload-section-wrapper .upload-ug-marksheet .upload-ug-marksheet-content {
+		padding:15px 25px;
+	}
+	.upload-section-wrapper .uploadSubmit {
+		width: 100%;
+	}
+}
+
+/*Tablet and Medium Device Styles*/
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+	/*Step-1*/
+	.form-two-column-wrapper {
+	    padding: 0;
+	}
+	.form-two-column-wrapper .login-form form {
+	    padding: 0 25px;
+	}
+	.form-two-column-wrapper .login-form label {
+		padding-right: 5px;
+	}
+	.form-two-column-wrapper .login-component-wrapper {
+		width: 48%;
+	}
+	.partially-filled-form {
+		min-height: 475px;
+	}
+	.partially-filled-form .partial-form input, .partially-filled-form .partial-form select {
+	    width: 225px;
+	}
+	.partially-filled-form .partial-form input.submit-button {
+		margin-right: 15px;
+	}
+
+	/*Step-2*/
+	.basic-details-wrapper .selection select {
+	    width: 85%;
+	}
+	.education-wrapper input, .education-wrapper select {
+		width: 155px;
+	}
+	.family-details-wrapper .form-group, .family-details-wrapper .form-group input {
+		width: 175px;
+	}
+	.family-details-wrapper .form-group.relation-section {
+		width: 100%;
+	}
+
+	/*Step-3*/
+	.upload-section {
+	    padding: 0;
+	}
+	.upload-section-wrapper .upload-photo, .upload-section-wrapper .upload-sslc-marksheet, 
+	.upload-section-wrapper .upload-hsc-marksheet, .upload-section-wrapper .upload-ug-marksheet {
+		width: 72%;
+	}
+}

@@ -1,0 +1,94 @@
+.content-page-image img {
+    width: 100%;
+}
+
+.content-page-descriptions {
+    padding: 20px 20px 40px 20px;
+}
+
+.content-page-descriptions h3 {
+    margin: 0 0 20px;
+}
+
+.content-page-descriptions:hover {
+    background: #dc2e27;
+    color: #fff;
+    cursor: pointer;
+}
+
+.upcoming-events-component-wrapper:last-child {
+    margin-right: 0;
+}
+
+.upcoming-events-component-wrapper {
+    margin-left: 8px;
+}
+
+.upcoming-events-component-wrapper:first-child {
+    margin-left: -16px;
+}
+
+.slick-dots {
+    text-align: right !important;
+    width: 300px !important;
+    right: 40px !important;
+}
+
+.slider .slick-dots li {
+    width: 25px;
+    margin: 0;
+}
+
+.slider .slick-dots .slick-active a {
+    background: #dc2e27;
+    color: #fff;
+    text-align: center;
+    padding: 3px;
+}
+
+.slider-arrows a {
+    margin-top: -25px;
+    float: right;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.slider-arrows a.prev {
+    margin-right: 100px;
+}
+
+.main-content-wrapper h1 {
+    font-size: 32px;
+    color: #373737;
+    padding: 0 0 30px;
+    margin: 0 0 30px;
+    border-bottom: 1px solid #f5f4f3;
+}
+
+.pagingInfo {
+    margin-top: -25px;
+    float: left;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+}
+
+
+/*Mobile and Small Device Styles*/
+
+@media only screen and (min-width: 0) and (max-width: 767px) {
+    .pagingInfo,
+    .next,
+    .slick-dots {
+        font-size: 12px;
+    }
+    .upcoming-events-component-wrapper:first-child {
+        margin-left: 0;
+    }
+}
+
+
+/*Tablet and Medium Device Styles*/
+
+@media only screen and (min-width: 768px) and (max-width: 1199px) {}

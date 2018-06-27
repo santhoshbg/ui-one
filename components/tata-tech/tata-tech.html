@@ -1,0 +1,56 @@
+<div class="tata-tech-content-page-main-wrapper">
+    <!-- carousel -->
+    <div class="tata-tech-content-page-banner-wrapper">
+        <div class="content-page-banner">
+            <img src="images/tata-technologies-page-banner.jpg" alt="GEU Tata Technologies">
+        </div>
+    </div>
+    <div class="tata-tech-enquire-form-component">
+        <ul class="tata-tech-enquire-form-content">
+            <form id="tataTechEnquireForm">
+                <div class="form-group">
+                    <input type="text" class="form-control-textField" id="name" name="name" placeholder=" *Name">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control-textField" id="phoneNumber" name="phoneNumber" placeholder=" *Phone" maxlength="10">
+                </div>
+                <div class="form-group">
+                    <input type="email" class="form-control-textField" id="inputEmail" name="inputEmail" placeholder="*Email">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control-textField" id="inputCity" name="inputCity" placeholder="City">
+                </div>
+                <div class="form-group">
+                    <div class="courseSelectContainer">
+                        <div class="input-group-custom">
+                            <div class="select">
+                                <select name="courseSelectContainer" id="courseSelectContainer" class="form-control-textField required">
+                                    <option>---Select---</option>
+                                    <option value="1">BSC</option>
+                                    <option value="2">MCA</option>
+                                    <option value="3">MA</option>
+                                    <option value="4">MSC</option>
+                                    <option value="5">BE</option>
+                                    <option value="6">PHD</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <textarea rows="4" placeholder="Query" id="comment" name="comment"></textarea>
+                </div>
+                <div class="form-group">
+                    <div class="courseSelectContainer">
+                        <div class="input-group-custom">
+                            <button type="submit" class="tata-tech-form-submit">Submit</button>
+                        </div>
+                    </div>
+                </div>
+                <span id="errormsg" name="errormsg" class="errormsg">Please enter mandatory fields</span>
+                <span id="successMsg" class="successMsg">Inserted Successfully ! </span>
+                <span id="emailerrormsg" name="emailerrormsg" class="errormsg">Please enter valid email </span>
+            </form>
+        </ul>
+    </div>
+</div>

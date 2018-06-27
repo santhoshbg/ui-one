@@ -1,0 +1,60 @@
+.accordion-container .panel {
+	border: none;
+	box-shadow: none;
+	margin: 0 0 5px;
+}
+.accordion-container .panel-heading[aria-expanded="true"] {
+	background-color: #dc2e27;
+	height: 50px;
+}
+.accordion-container .panel-heading .panel-title {
+	text-transform: uppercase;
+	vertical-align: middle;
+	color: #fff;
+	line-height: 30px;
+}
+.accordion-container .panel-heading,
+.accordion-container .panel-heading.collapsed {
+	background-color: #373737;
+	border-radius: 0;
+	cursor: pointer;
+}
+.accordion-container .panel-heading .panel-title:before {
+    float: right;
+    content: "\2212";
+    font-size: 24px;
+    font-weight: 900;
+}
+.accordion-container .panel-heading.collapsed .panel-title:before {
+    float: right;
+    content: "\002b";
+    font-size: 24px;
+    font-weight: 900;
+    color: #fff;
+}
+
+.accordion-container .panel-body .heading {
+	font: 14px/16px 'Roboto-Bold';
+	margin: 0 0 10px;
+}
+.accordion-container .panel-body .sub-heading {
+	font: 14px/16px 'Roboto-Regular';
+	margin: 0 0 10px;
+}
+.accordion-container .panel-body p {
+	font: 12px/15px 'Roboto-Regular';
+	margin: 0 0 15px;
+}
+
+/*Mobile, Tablet and Medium device styles*/
+@media only screen and (max-width: 1199px) {
+	.accordion-container .panel-heading .panel-title {
+		font-size: 13px;
+	}
+	.accordion-container .panel-body .heading, .panel-body .sub-heading {
+		font-size: 12px;
+	}
+	.accordion-container .panel-body p {
+		font-size: 11px;
+	}
+}

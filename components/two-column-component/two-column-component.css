@@ -1,0 +1,16 @@
+.two-column-component .two-column-container h3 {
+	font-size: 24px;
+	margin: 0 0 25px;
+}
+.two-column-component .two-column-container .two-column-content-section {
+	width: 48%;
+	display: inline-block;
+	vertical-align: top;
+}
+.two-column-component .two-column-container .two-column-content-section:last-child {
+	margin-left: 30px;
+}
+.two-column-component .two-column-container .two-column-content-block {
+	font-size: 16px;
+	margin: 0 0 30px;
+}

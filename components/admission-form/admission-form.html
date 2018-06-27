@@ -1,0 +1,531 @@
+<div class="form-wrapper">
+    <div class="form-tabs">
+        <ul class="clearfix" id="myLinks">
+            <li><a>Login</a></li>
+            <li><a>Basic Details</a></li>
+            <li><a>Upload Documents</a></li>
+        </ul>
+    </div>
+    <div id="myTabs">
+        <div class="form-two-column-wrapper" style="display: none;">
+            <div class="login-component-wrapper">
+                <div class="two-column-heading">
+                    <h4>Apply Fresh</h4>
+                </div>
+                <div class="login-form">
+                    <form class="registration-form" id="registration-form" novalidate>
+                        <div class="form-error-message"></div>
+                        <div class="invalid-error-message"></div>
+                        <div class="form-group fname">
+                            <label>FirstName</label>
+                            <input type="text" name="fname" class="fname" id="fname">
+                        </div>
+                        <div class="form-group lname">
+                            <label>LastName</label>
+                            <input type="text" name="lname" class="lname" id="lname">
+                        </div>
+                        <div class="form-group">
+                            <label>Area of Interest</label>
+                            <select id="area-of-interest">
+                                <option value="">--Select--</option>
+                                <option value="undergraduate">UnderGraduate</option>
+                                <option value="postgraduate">PostGraduate</option>
+                            </select>
+                        </div>
+                        <div class="form-group email">
+                            <label>Email</label>
+                            <input type="text" name="email" class="email" id="email">
+                        </div>
+                        <div class="form-group mobile">
+                            <label>Mobile</label>
+                            <input type="text" name="mobile" class="mobile" id="mobile">
+                        </div>
+                        <div class="otp-wrapper clearfix">
+                            <div class="form-group otp">
+                                <input type="text" name="enterOtp" class="enterOtp" placeholder="Enter OTP" id="enterOtp">
+                            </div>
+                            <div class="form-group otp">
+                                <input type="button" name="sendOtp" class="sendOtp" value="Re-Send OTP" id="sendOtp" disabled>
+                            </div>
+                            <div id="hideMsg">
+                                This Button will re-enable after<span>5</span> Seconds
+                            </div>
+                        </div>
+                        <div class="form-group submit clearfix">
+                            <input type="submit" value="Proceed" class="submit-button" id="login-form-submit">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="partially-filled-form">
+                <div class="two-column-heading">
+                    <h4>Continue Partially Filled Form(2018)</h4>
+                </div>
+                <div class="partial-form">
+                    <div class="partially-filled-form-error-message"></div>
+                    <form>
+                        <div class="form-group formNumber">
+                            <label>Form No</label>
+                            <input type="text" name="formNumber" class="formNumber" id="formNumber">
+                        </div>
+                        <div class="form-group submit">
+                            <input type="submit" value="Proceed" class="submit-button" id="partiallyFilledForm">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!--Registration Step2-->
+        <div class="basic-details-section" style="display: none;">
+            <form id="basic-details-form">
+                <div class="basic-details-wrapper">
+                    <div class="basic-details-form-error-message"></div>
+                    <div class="top-section-wrapper clearfix">
+                        <div class="personal-details">
+                            <div class="each-section">
+                                <div class="label">Name</div>
+                                <div class="content" id="name" name="name">Kiran Thyag</div>
+                            </div>
+                            <div class="each-section">
+                                <div class="label">Mobile</div>
+                                <div class="content" id="mobile" name="mobile">1234567890</div>
+                            </div>
+                            <div class="each-section">
+                                <div class="label">Email</div>
+                                <div class="content" id="email" name="email">Kiran.1@valtech.co.in</div>
+                            </div>
+                            <div class="each-section">
+                                <div class="label">Form ID</div>
+                                <div class="content" id="formId" name="formId">4947</div>
+                            </div>
+                        </div>
+                        <div class="form-group selection">
+                            <label>Area of Interest </label>
+                            <select id="areaOfInterestForm">
+                                <option value="">--Select--</option>
+                                <option value="undergraduate">UnderGraduate</option>
+                                <option value="postgraduate">PostGraduate</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <!--Program Details-->
+                <div class="program-wrapper">
+                    <div class="tab-heading">
+                        Program
+                    </div>
+                    <div class="form-group selection">
+                        <label>Level</label>
+                        <select id="levelSelection" name="levelSelection">
+                            <option value="">--SelectCourse--</option>
+                            <option value="ug" id="ug">UnderGraduate</option>
+                            <option value="pg" id="pg">PostGraduate</option>
+                        </select>
+                    </div>
+                    <div class="form-group selection-ug">
+                        <label>Program</label>
+                        <select name="programSelection" id="programSelection">
+                            <option value="">--Select Program--</option>
+                            <option value="bsc" id="ug_bsc">B.sc</option>
+                            <option value="be" id="ug_be">B.E.</option>
+                            <option value="mca" id="pg_mca">MCA</option>
+                            <option value="mba" id="pg_mba">MBA</option>
+                        </select>
+                    </div>
+                    <div class="course-details-wrapper">
+                        <div class="heading">
+                            Title
+                        </div>
+                        <div class="course-details clearfix">
+                            <div class="course-title">
+                                Course title
+                            </div>
+                            <div class="course-description">
+                                Course Description
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Education Details-->
+                <div class="education-wrapper">
+                    <div class="tab-heading">
+                        Education Details
+                    </div>
+                    <div class="sslc-wrapper">
+                        <div class="education-heading">
+                            Class X
+                        </div>
+                        <div class="form-group selection sslcBoard">
+                            <label>Board</label>
+                            <select id="sslcBoard">
+                                <option value="">--Select--</option>
+                                <option value="cbse">CBSE</option>
+                                <option value="icse">ISC</option>
+                                <option value="state">NIOS</option>
+                                <option value="others">Others</option>
+                            </select>
+                        </div>
+                        <div class="form-group sslcSchool">
+                            <label>School</label>
+                            <input type="text" name="sslcSchool" id="sslcSchool" class="sslcSchool">
+                        </div>
+                        <div class="form-group sslcRollNo">
+                            <label>Roll No.</label>
+                            <input type="text" name="sslcRollNo" id="sslcRollNo" class="sslcRollNo">
+                        </div>
+                        <div class="form-group sslcPassingYear">
+                            <label>Passing Year</label>
+                            <input type="text" name="sslcPassingYear" id="sslcPassingYear" class="sslcPassingYear">
+                        </div>
+                        <div class="form-group sslcMarks">
+                            <label>Marking System</label>
+                            <input type="text" name="sslcMarks" id="sslcMarks" class="sslcMarks">
+                        </div>
+                        <div class="form-group sslcPercentage">
+                            <label>Aggregate Percentage</label>
+                            <input type="text" name="sslcPercentage" id="sslcPercentage" class="sslcPercentage">
+                        </div>
+                    </div>
+                    <div class="hsc-wrapper">
+                        <div class="education-heading">
+                            Class XII
+                        </div>
+                        <div class="top-section">
+                            <div class="form-group selection pucBoard">
+                                <label>Board</label>
+                                <select id="pucBoard">
+                                    <option value="">--Select--</option>
+                                    <option value="cbse">CBSE</option>
+                                    <option value="icse">ISC</option>
+                                    <option value="state">NIOS</option>
+                                    <option value="others">Others</option>
+                                </select>
+                            </div>
+                            <div class="form-group pucSchool">
+                                <label>School</label>
+                                <input type="text" name="pucSchool" id="pucSchool" class="pucSchool">
+                            </div>
+                            <div class="form-group pucStatus">
+                                <label>Status</label>
+                                <select id="pucStatus">
+                                    <option value="">--Select--</option>
+                                    <option value="appearing">Appearing</option>
+                                    <option value="passed">Passed</option>
+                                </select>
+                            </div>
+                            <div class="form-group pucRollNo">
+                                <label>Roll No.</label>
+                                <input type="text" name="pucRollNo" id="pucRollNo" class="pucRollNo">
+                            </div>
+                            <div class="form-group pucPassingYear">
+                                <label>Passing Year</label>
+                                <input type="text" name="pucPassingYear" id="pucPassingYear" class="pucPassingYear">
+                            </div>
+                            <div class="form-group pucCity">
+                                <label>City</label>
+                                <input type="text" name="pucCity" id="pucCity" class="pucCity">
+                            </div>
+                            <div class="form-group pucPincode">
+                                <label>Pincode</label>
+                                <input type="text" name="pucPincode" id="pucPincode" class="pucPincode">
+                            </div>
+                        </div>
+                        <div class="bottom-section">
+                            <div class="form-group select-option">
+                                <div class="heading">XII Results Declared - If yes percentage (Agg.All Subjects)</div>
+                                <label>
+                                    <input type="radio" name="puc-results" value="pucResultsYes" id="pucResultsYes">Yes
+                                </label>
+                                <label>
+                                    <input type="radio" name="puc-results" value="pucResultsNo" id="pucResultsNo"> No
+                                </label>
+                            </div>
+                            <div class="form-group pucPercentage">
+                                <label>Aggregate Percentage</label>
+                                <input type="text" name="pucPercentage" id="pucPercentage" class="pucPercentage">
+                            </div>
+                        </div>
+                    </div>
+                    <!--Graduation Wrapper-->
+                    <div class="graduation-wrapper">
+                        <div class="education-heading">
+                            Graduation
+                        </div>
+                        <div class="top-section">
+                            <div class="form-group">
+                                <label>College Name</label>
+                                <input type="text" name="ugCollege" id="ugCollege" class="ugCollege">
+                            </div>
+                            <div class="form-group">
+                                <label>University Name</label>
+                                <input type="text" name="ugUniversity" id="ugUniversity" class="ugUniversity">
+                            </div>
+                            <div class="form-group">
+                                <label>Course</label>
+                                <input type="text" name="ugCourse" id="ugCourse" class="ugCourse">
+                            </div>
+                            <div class="form-group">
+                                <label>Specialization</label>
+                                <input type="text" name="ugSpecialization" id="ugSpecialization" class="ugSpecialization">
+                            </div>
+                            <div class="form-group">
+                                <label>Passing Year</label>
+                                <input type="text" name="ugPassingYear" id="ugPassingYear" class="ugPassingYear">
+                            </div>
+                            <div class="form-group">
+                                <label>City</label>
+                                <input type="text" name="ugCity" id="ugCity" class="ugCity">
+                            </div>
+                            <div class="form-group">
+                                <label>Pincode</label>
+                                <input type="text" name="ugPincode" id="ugPincode" class="ugPincode">
+                            </div>
+                        </div>
+                        <div class="bottom-section">
+                            <div class="form-group select-option">
+                                <div class="heading">Graduation Results Declared - If yes percentage (Agg.All Subjects)</div>
+                                <label>
+                                    <input type="radio" name="ug-results" value="ugResultsYes" id="ugResultsYes" checked="checked">Yes
+                                </label>
+                                <label>
+                                    <input type="radio" name="ug-results" value="ugResultsNo" id="ugResultsNo"> No
+                                </label>
+                            </div>
+                            <div class="form-group">
+                                <label>Percentage / Score(Till Current Semester)</label>
+                                <input type="text" name="ugPercentage" id="ugPercentage" class="ugPercentage">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Personal Details-->
+                <div class="personal-details-wrapper clearfix">
+                    <div class="tab-heading">
+                        Personal Details
+                    </div>
+                    <div class="personal-details">
+                        <div class="form-group selection">
+                            <div class="heading">Gender</div>
+                            <label>
+                                <input type="radio" name="sex" value="male" id="male" checked="checked">Male
+                            </label>
+                            <label>
+                                <input type="radio" name="sex" value="female" id="female"> Female
+                            </label>
+                            <label>
+                                <input type="radio" name="sex" value="transgender" id="transgender"> Transgender
+                            </label>
+                        </div>
+                        <div class="form-group selection">
+                            <div class="heading">Caste</div>
+                            <label>
+                                <input type="radio" name="caste" value="genreral" id="genreral" checked="checked">General
+                            </label>
+                            <label>
+                                <input type="radio" name="caste" value="sc" id="sc"> SC
+                            </label>
+                            <label>
+                                <input type="radio" name="caste" value="st" id="st"> ST
+                            </label>
+                            <label>
+                                <input type="radio" name="caste" value="obc" id="obc"> OBC
+                            </label>
+                        </div>
+                        <div class="form-group dob">
+                            <label>Date of Birth</label>
+                            <input type="text" name="dob" id="dob" class="dob">
+                        </div>
+                        <div class="form-group aadharNo">
+                            <label>Aadhar No</label>
+                            <input type="text" name="aadharNo" id="aadharNo" class="aadharNo">
+                        </div>
+                    </div>
+                    <div class="communication-address">
+                        <div class="address-heading">
+                            Correspondence Address
+                        </div>
+                        <textarea id="correspondenceAddress" name="correspondenceAddress" class="correspondenceAddress"></textarea>
+                    </div>
+                    <div class="permanent-address">
+                        <div class="address-heading">
+                            Permanent Address
+                            <label>
+                                <input type="checkbox" name="copyAddress" id="copyAddress" class="copyAddress">Same as corresponce address
+                            </label>
+                        </div>
+                        <textarea id="permanentAddress" name="permanentAddress" class="permanentAddress"></textarea>
+                    </div>
+                    <div class="form-group suffer-section">
+                        <div class="heading">Do you suffer</div>
+                        <label>
+                            <input type="radio" name="suffer" value="sufferYes" id="sufferYes">Yes
+                        </label>
+                        <label>
+                            <input type="radio" name="suffer" value="sufferNo" id="suffer-no" checked="checked"> No
+                        </label>
+                        <textarea id="suffering" name="suffering" class="suffering"></textarea>
+                    </div>
+                </div>
+                <!--Family Information-->
+                <div class="family-details-wrapper clearfix">
+                    <div class="tab-heading">
+                        Family Information
+                    </div>
+                    <div class="father-details">
+                        <div class="heading">
+                            Father Details
+                        </div>
+                        <div class="form-group fatherName">
+                            <label>Name</label>
+                            <input type="text" name="fatherName" id="fatherName" class="fatherName">
+                        </div>
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="text" name="fatherEmail" id="fatherEmail" class="fatherEmail">
+                        </div>
+                        <div class="form-group">
+                            <label>Mobile No</label>
+                            <input type="text" name="fatherMobile" id="fatherMobile" class="fatherMobile">
+                        </div>
+                    </div>
+                    <div class="mother-details">
+                        <div class="heading">
+                            Mother Details
+                        </div>
+                        <div class="form-group motherName">
+                            <label>Name</label>
+                            <input type="text" name="motherName" id="motherName" class="motherName">
+                        </div>
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="text" name="motherEmail" id="motherEmail" class="motherEmail">
+                        </div>
+                        <div class="form-group">
+                            <label>Mobile No</label>
+                            <input type="text" name="motherMobile" id="motherMobile" class="motherMobile">
+                        </div>
+                    </div>
+                    <div class="form-group relation-section">
+                        <div class="heading">Association of any Family member with Graphic Era?</div>
+                        <label>
+                            <input type="radio" name="relation" value="employee" id="employee">Employeee
+                        </label>
+                        <label>
+                            <input type="radio" name="relation" value="student" id="student"> Student
+                        </label>
+                        <label>
+                            <input type="radio" name="relation" value="alumni" id="alumni">Alumni
+                        </label>
+                        <label>
+                            <input type="radio" name="relation" value="none" id="none" checked="checked"> None
+                        </label>
+                    </div>
+                    <div class="basic-details-mobile-error-message"></div>
+                    <input type="submit" name="submit" value="Save and Continue" id="save">
+            </form>
+            </div>
+            </form>
+        </div>
+        <!--Registration Step3 Upload Documents-->
+        <div class="upload-section clearfix">
+            <div class="upload-section-wrapper">
+                <div class="upload-error-message"></div>
+                <form method="POST" enctype="multipart/form-data">
+                    <div class="upload-option">
+                        <span class="photo" style="display:none;"></span>
+                        <label for="uploadPhoto" class="custom-file-upload">
+                            <i class="fa fa-cloud-upload"></i> Upload Image
+                        </label>
+                        <input id="uploadPhoto" class="uploadPhoto" name='uploadPhoto' type="file" style="display:none;">
+                        <label id="photo-name"></label>
+                    </div>
+                    <div class="upload-photo">
+                        <div class="upload-photo-content">
+                            <h4>UPLOAD PHOTO</h4>
+                            <p>Upload your recent passport size (3.5 x 4.5cm) color photograph (format should be jpg, gif, png, jpeg, bmp and maximum file size alloted is 1 MB)</p>
+                        </div>
+                    </div>
+                    <div class="upload-sslc-option">
+                        <span class="sslc" style="display:none;"></span>
+                        <label for="uploadSslcMarksheet" class="custom-file-upload">
+                            <i class="fa fa-cloud-upload"></i> Upload Marksheet
+                        </label>
+                        <input id="uploadSslcMarksheet" class="uploadSslcMarksheet" name='uploadSslcMarksheet' type="file" style="display:none;">
+                        <label id="sslc-marksheet-name"></label>
+                    </div>
+                    <div class="upload-sslc-marksheet">
+                        <div class="upload-sslc-marksheet-content">
+                            <h4>UPLOAD MARKSHEET</h4>
+                            <p>Upload your X marksheet (format should be jpg, gif, png, jpeg, bmp,pdf and maximum file size alloted is 2 MB)</p>
+                        </div>
+                    </div>
+                    <div class="upload-hsc-option">
+                        <span class="hsc" style="display:none;"></span>
+                        <label for="uploadHscMarksheet" class="custom-file-upload">
+                            <i class="fa fa-cloud-upload"></i> Upload Marksheet
+                        </label>
+                        <input id="uploadHscMarksheet" class="uploadHscMarksheet" name='uploadHscMarksheet' type="file" style="display:none;">
+                        <label id="hsc-marksheet-name"></label>
+                    </div>
+                    <div class="upload-hsc-marksheet">
+                        <div class="upload-hsc-marksheet-content">
+                            <h4>UPLOAD MARKSHEET</h4>
+                            <p>Upload your XII prelims/marksheet (format should be jpg, gif, png, jpeg, bmp,pdf and maximum file size alloted is 2 MB) </p>
+                        </div>
+                    </div>
+                    <div class="upload-ug-option">
+                        <span class="ug" style="display:none;"></span>
+                        <label for="uploadUgMarksheet" class="custom-file-upload">
+                            <i class="fa fa-cloud-upload"></i> Upload Marksheet
+                        </label>
+                        <input id="uploadUgMarksheet" class="uploadUgMarksheet" name='uploadUgMarksheet' type="file" style="display:none;">
+                        <label id="hsc-marksheet-name"></label>
+                    </div>
+                    <div class="upload-ug-marksheet">
+                        <div class="upload-ug-marksheet-content">
+                            <h4>UPLOAD MARKSHEET</h4>
+                            <p>Upload your UG prelims/marksheet (format should be jpg, gif, png, jpeg, bmp,pdf and maximum file size alloted is 2 MB) </p>
+                        </div>
+                    </div>
+                    <div class="video-section">
+                        <div class="video-content">
+                            UPLOAD self introductory video(Either provide a Youtube link in the below field or you can send the Video over Whatsapp at the following number - xxxxxxxxxx. Please mention your FormID when sending the video over the Whatsapp.)
+                        </div>
+                        <div class="video-input">
+                            <input type="text" name="videoUrl" id="videoUrl" class="videoUrl">
+                        </div>
+                        <div class="video-checkbox">
+                            <label>
+                                <input type="checkbox" name="videoWhatsApp" class="videoWhatsApp" id="videoWhatsApp">I, will send the video on Whatsapp
+                            </label>
+                        </div>
+                    </div>
+                    <div class="one-field-mandate"></div>
+                    <div class="essay-question-first">
+                        <div class="essay-question">
+                            What are your strength and Weakness?
+                        </div>
+                        <div class="essay-answer">
+                            <textarea placeholder="char limit 100-2000max"></textarea>
+                        </div>
+                    </div>
+                    <div class="essay-question-second">
+                        <div class="essay-question">
+                            What are your strength and Weakness?
+                        </div>
+                        <div class="essay-answer">
+                            <textarea placeholder="char limit 100-2000max"></textarea>
+                        </div>
+                    </div>
+                    <input type="submit" name="uploadSubmit" value="Submit" class="uploadSubmit" id="uploadSubmit">
+            </div>
+            </form>
+        </div>
+        <!--RegistrationComplete-->
+        <div class="thanks-wrapper" style="display: none;">
+            <div class="thanks-content">
+                Thank You for Completing Registration, Please check your email for further steps.
+            </div>
+        </div>
+    </div>
+</div>

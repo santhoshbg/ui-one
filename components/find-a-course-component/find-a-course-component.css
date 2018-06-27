@@ -1,0 +1,45 @@
+.find-a-course-section {
+    background: #373737;
+    padding: 50px 0;
+}
+.find-a-course-section h3 {
+    font-size: 30px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.find-a-course-section .course-details-wrapper {
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    min-height: 280px;
+    padding: 40px 0 40px 0;
+}
+.course-details-wrapper ul li {
+    padding: 12px 0;
+    display: inline-block;
+    width: 30%;
+    border-bottom: 1px solid white;
+    border-bottom-style: dashed;
+    margin: 0 17px;
+    cursor: pointer;
+}
+.course-details-wrapper ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/*Mobile Styles*/
+@media only screen and (min-width: 0) and (max-width: 767px) {
+    .course-details-wrapper ul li {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+/*Tablet and Medium Devices Styles*/
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+    .course-details-wrapper ul li {
+        width: 45%;
+        margin: 0 17px;
+    }
+}

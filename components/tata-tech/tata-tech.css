@@ -1,0 +1,173 @@
+.tata-tech-content-page-main-wrapper {
+    background-color: #e5e5e5;
+    position: relative;
+}
+.tata-tech-enquire-form-content form {
+    padding: 20px 20px 0px 20px;
+    text-align: center;
+}
+
+ul.enquire-now-form {
+    float: left;
+}
+
+ul.tata-tech-enquire-form-content {
+    position: absolute;
+    left: 12.4%;
+    top: 0;
+    z-index: 1000;
+    padding: 5px 0;
+    margin: 40px 0 0;
+    list-style: none;
+    background-color: #2377c6;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0, 0, 0, .15);
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+    width: 25%;
+}
+
+.form-control-textField {
+    display: block;
+    width: 100%;
+    height: 36px;
+    padding: 6px 12px;
+    font-family: 'Roboto-Light';
+    font-size: 12px;
+    line-height: 1.42857143;
+    color: #7a7a7a;
+    background-color: #ececec;
+    background-image: none;
+    border: 1px solid #f7f7f7;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+.input-group-custom {
+    position: relative;
+    display: table;
+    border-collapse: separate;
+    margin-bottom: 15px;
+    width: 100%;
+}
+.select {
+    line-height: 2.5;
+    background: #ececec;
+    width: 100% !important;
+}
+
+select {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0 0 0 .5em;
+    color: #7a7a7a;
+    cursor: pointer;
+    font-family: 'Roboto-Light';
+    font-size: 12px;
+}
+
+.select::after {
+    content: '\25BC';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0 1em;
+    background: #dcdcdc;
+    pointer-events: none;
+    color: #7a7a7a;
+}
+.courseSelectContainer {
+    padding: 0;
+}
+
+textarea {
+    width: 100%;
+    color: #7a7a7a;
+    font-family: 'Roboto-Light';
+    font-size: 12px;
+    padding: 6px 12px;
+    vertical-align: middle;
+    resize: vertical;
+}
+
+.tata-tech-form-submit {
+    font-family: 'Roboto-Bold';
+    color: #fff;
+    background-color: #dc2e27;
+    padding: 8px 35px;
+    cursor: pointer;
+    text-transform: uppercase;
+    border: 1px solid #cc8481;
+    width: 100%;
+}
+span#errormsg, #successMsg {
+	font-size: 10px;
+	color: #fff;
+	display: none;
+}
+#emailerrormsg {
+	font-size: 10px;
+	text-align: center;
+	color: #fff;
+	display: none;
+}
+#tataTechEnquireForm label.error {
+	margin-top: 3px;
+	text-align: right;
+	display: block;
+	margin-bottom: -10px;
+}
+#tataTechEnquireForm input.error {
+	margin-bottom: 0px;
+}
+#tataTechEnquireForm .form-group label.error {
+	color: #fff;
+}
+.form-group:after {
+	content: '';
+	display: table;
+	width: 100%;
+}
+#tataTechEnquireForm  .form-group {
+    position: relative;
+    text-align: right;
+}
+
+.error {
+    /*border: 2px solid #dc2e27;*/
+    font-size: 10px;
+    /*color: #fff;*/
+}
+.mandate {
+    border: 2px solid #dc2e27;
+}
+
+@media only screen and (max-width: 767px) {
+	ul.tata-tech-enquire-form-content {
+	    position: relative;
+	    margin: 0;
+	    width: 100%;
+	    left: 0;
+	}
+	
+}
+/*Tablet and Medium Device Styles*/
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    ul.tata-tech-enquire-form-content {
+	    width: 50%;
+	    margin: 10px 0;
+	}
+}
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+    ul.tata-tech-enquire-form-content {
+	    width: 50%;
+	    margin: 10px 0;
+	}
+}

@@ -1,0 +1,93 @@
+.sitemap-component::after
+{
+    content: "";
+    display: table;
+    width:100%;
+}
+.sitemap-col
+{
+    width:33.3%;
+    float: left;
+    padding-right: 30px;
+}
+.sitemap-col ul
+{
+    margin: 0;
+    padding: 0;
+}
+.sitemap-col ul li
+{
+    list-style: none;
+}
+.sitemap-col > ul > li
+{
+    margin-top: 15px;
+}
+.sitemap-col > ul > li > a
+{
+    font-size: 16px;
+    color: #fff;
+    text-transform: uppercase;
+    display: block;
+    background: #373737;
+    padding: 5px;
+}
+.sitemap-col > ul > li > ul
+{
+    border-left: 1px solid #373737;
+    margin-left: 15px;
+    padding-top: 15px;
+    margin-bottom: 10px;
+}
+.sitemap-col > ul > li > ul::after
+{
+    margin-left: -1px;
+    position: relative;
+    z-index: 1;
+    background: #fff;
+    content: "";
+    height: 10px;
+    width: 2px;
+    display: block;
+    margin-top: -15px;
+}
+.sitemap-col > ul > li > ul > li
+{
+    padding: 5px 10px 5px 30px;
+    background: url("../../images/sitemap-list-style.png") -25px 13px no-repeat;
+    margin-left: -1px;
+}
+.sitemap-col > ul > li > ul > li > a 
+{
+    color: #373737;
+    font-size: 15px;
+}
+
+@media only screen and (max-width: 992px) {
+
+    .sitemap-col
+    {
+        width:50%;
+    }
+    .sitemap-col:last-of-type
+    {
+        width:100%;
+        padding-right: 0;
+    }
+
+    .sitemap-col:last-of-type li
+    {
+        float: left;
+        width:50%;
+        padding-right: 30px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .sitemap-col,
+    .sitemap-col:last-of-type li
+    {
+        width:100%;
+        padding-right:0;
+    }
+}

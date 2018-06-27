@@ -1,0 +1,45 @@
+.tab-nav-wrapper {  
+    overflow: auto;
+    white-space: nowrap;
+    margin-top: -45px;
+}
+
+.tab-switch-component ul li  {
+    display: inline-block;
+}
+
+.tab-switch-component ul li a {
+    margin: 0 4px;
+    line-height: 1.5;
+    border-radius: 10px 10px 0 0;
+    padding: 12px 10px;
+    background: #dc2e27;
+    color: #fff;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+}
+
+.tab-switch-component ul li.active a {
+    background: #fff;
+    color: #000;
+}
+
+.tab-switch-component ul li a:hover {
+    background-color: #fff;
+    color: #373737;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+    .tab-nav-wrapper {
+        margin-top: -80px;
+    }
+    .tab-switch-component ul li a {
+        font-size: 20px;
+        width: 300px;
+        height: 80px;
+        padding: 25px 0 0;
+        display: inline-block;
+        vertical-align: top;
+    }
+}
